@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Laure Compagnie SARL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="../CSS/galerie.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-mini"><i class="fas fa-star"></i> LC <i class="fas fa-star"></i></span>
+                Laure Compagnie Sarl
+            </div>
+            <a href="../index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Retour à l'accueil
+            </a>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Notre Galerie</h1>
+        <p>Découvrez nos plus belles réalisations</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Tout</button>
+            <button class="filter-btn" data-filter="decoration">Décoration</button>
+            <button class="filter-btn" data-filter="traiteur">Traiteur</button>
+            <button class="filter-btn" data-filter="coiffure">Coiffure</button>
+            <button class="filter-btn" data-filter="ongles">Onglerie</button>
+            <button class="filter-btn" data-filter="formation">Formation</button>
+            <button class="filter-btn" data-filter="location">Location</button>
+        </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-container">
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Décoration -->
+            <div class="gallery-item" data-category="decoration">
+                <img src="../img/decoration/D02.jpg" alt="Décoration mariage">
+                <div class="gallery-overlay">
+                    <h3>Mariage Élégant</h3>
+                    <p>Décoration florale luxueuse pour un mariage inoubliable</p>
+                    <span class="category-tag">Décoration</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="decoration">
+                <img src="../img/decoration/D07.jpg" alt="Décoration anniversaire">
+                <div class="gallery-overlay">
+                    <h3>Anniversaire Féérique</h3>
+                    <p>Ambiance magique pour un anniversaire mémorable</p>
+                    <span class="category-tag">Décoration</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="decoration">
+                <img src="../img/decoration/D24.jpg" alt="Décoration corporative">
+                <div class="gallery-overlay">
+                    <h3>Événement Corporate</h3>
+                    <p>Décoration professionnelle et sophistiquée</p>
+                    <span class="category-tag">Décoration</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="decoration">
+                <img src="../img/decoration/D01.jpg" alt="Décoration baby shower">
+                <div class="gallery-overlay">
+                    <h3>Baby Shower</h3>
+                    <p>Décoration douce et accueillante</p>
+                    <span class="category-tag">Décoration</span>
+                </div>
+            </div>
+
+            <!-- Traiteur -->
+            <div class="gallery-item" data-category="traiteur">
+                <img src="../img/all/gourme.jpg" alt="Buffet gourmet">
+                <div class="gallery-overlay">
+                    <h3>Buffet Gourmet</h3>
+                    <p>Cuisine raffinée et présentation élégante</p>
+                    <span class="category-tag">Traiteur</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="traiteur">
+                <img src="../img/cock.jpg" alt="Cocktail dinatoire">
+                <div class="gallery-overlay">
+                    <h3>Cocktail Dinatoire</h3>
+                    <p>Mets délicats pour vos réceptions</p>
+                    <span class="category-tag">Traiteur</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="traiteur">
+                <img src="../img/traiteur/T18.jpg" alt="Pâtisserie sur mesure">
+                <div class="gallery-overlay">
+                    <h3>Pâtisserie Sur Mesure</h3>
+                    <p>Créations sucrées personnalisées</p>
+                    <span class="category-tag">Traiteur</span>
+                </div>
+            </div>
+
+            <!-- Coiffure -->
+            <div class="gallery-item" data-category="coiffure">
+                <img src="../img/coiffure/coiffure1.png" alt="Coiffure mariée">
+                <div class="gallery-overlay">
+                    <h3>Coiffure Mariée</h3>
+                    <p>Style sophistiqué pour le plus beau jour</p>
+                    <span class="category-tag">Coiffure</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="coiffure">
+                <img src="../img/coiffure/image.png" alt="Coiffure afro">
+                <div class="gallery-overlay">
+                    <h3>Coiffure Afro</h3>
+                    <p>Tresses et coiffures africaines</p>
+                    <span class="category-tag">Coiffure</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="coiffure">
+                <img src="../img/coiffure/image copy.png" alt="Coiffure événement">
+                <div class="gallery-overlay">
+                    <h3>Coiffure Événementielle</h3>
+                    <p>Styles élégants pour toutes occasions</p>
+                    <span class="category-tag">Coiffure</span>
+                </div>
+            </div>
+
+            <!-- Onglerie -->
+            <div class="gallery-item" data-category="ongles">
+                <img src="../img/coiffure/onglerie.png" alt="Nail art">
+                <div class="gallery-overlay">
+                    <h3>Nail Art Créatif</h3>
+                    <p>Designs uniques et personnalisés</p>
+                    <span class="category-tag">Onglerie</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="ongles">
+                <img src="../img/coiffure/onglerie2.png" alt="Manucure élégante">
+                <div class="gallery-overlay">
+                    <h3>Manucure Élégante</h3>
+                    <p>Finition parfaite et soignée</p>
+                    <span class="category-tag">Onglerie</span>
+                </div>
+            </div>
+
+            <!-- Formation -->
+            <div class="gallery-item" data-category="formation">
+                <img src="../img/formation/ouais.jpg" alt="Formation décoration">
+                <div class="gallery-overlay">
+                    <h3>Formation Décoration</h3>
+                    <p>Apprentissage pratique avec des professionnels</p>
+                    <span class="category-tag">Formation</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="formation">
+                <img src="../img/formation/about-us.jpg" alt="Formation coiffure">
+                <div class="gallery-overlay">
+                    <h3>Formation Coiffure</h3>
+                    <p>Techniques professionnelles enseignées</p>
+                    <span class="category-tag">Formation</span>
+                </div>
+            </div>
+
+            <!-- Location -->
+            <div class="gallery-item" data-category="location">
+                <img src="../img/all/location.jpg" alt="Location matériel">
+                <div class="gallery-overlay">
+                    <h3>Location de Matériel</h3>
+                    <p>Équipements professionnels de qualité</p>
+                    <span class="category-tag">Location</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="location">
+                <img src="../img/all/materiel.jpg" alt="Matériel événementiel">
+                <div class="gallery-overlay">
+                    <h3>Matériel Événementiel</h3>
+                    <p>Sonorisation, lumière et décor</p>
+                    <span class="category-tag">Location</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="location">
+                <img src="../img/decoration/loc .jpg" alt="Matériel événementiel">
+                <div class="gallery-overlay">
+                    <h3>Matériel culturel</h3>
+                    <p>Culture, tradition et diversité</p>
+                    <span class="category-tag">Location</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="location">
+                <img src="../img/all/ventila.jpg" alt="Matériel événementiel">
+                <div class="gallery-overlay">
+                    <h3>Matériel d'aération</h3>
+                    <p>ventilation, aération et mise en aise</p>
+                    <span class="category-tag">Location</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="decoration">
+                <img src="../img/decoration/D04.jpg" alt="Décoration cocktail">
+                <div class="gallery-overlay">
+                    <h3>Cocktail Festif</h3>
+                    <p>Décoration dynamique et colorée pour vos réceptions</p>
+                    <span class="category-tag">Décoration</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="traiteur">
+                <img src="../img/traiteur/T09.jpg" alt="Buffet gourmet">
+                <div class="gallery-overlay">
+                    <h3>Délices Culinaires</h3>
+                    <p>Une expérience gastronomique inoubliable avec des plats exquis.</p>
+                    <span class="category-tag">Traiteur</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="decoration">
+                <img src="../img/decoration/D06.jpg" alt="Décoration thématique">
+                <div class="gallery-overlay">
+                    <h3>Thème Personnalisé</h3>
+                    <p>Décoration sur mesure selon votre vision</p>
+                    <span class="category-tag">Décoration</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="decoration">
+                <img src="../img/decoration/D14.jpg" alt="Décoration soirée">
+                <div class="gallery-overlay">
+                    <h3>Soirée Glamour</h3>
+                    <p>Ambiance chic et raffinée pour vos soirées inoubliables</p>
+                    <span class="category-tag">Décoration</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="traiteur">
+                <img src="../img/traiteur/T05.jpg" alt="Buffet gourmet">
+                <div class="gallery-overlay">
+                    <h3>Desserts Élégante</h3>
+                    <p>Une sélection de desserts raffinés pour vos événements spéciaux.</p>
+                    <span class="category-tag">Traiteur</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="decoration">
+                <img src="../img/decoration/D05.jpg" alt="Décoration cérémonie">
+                <div class="gallery-overlay">
+                    <h3>Cérémonie Solennel</h3>
+                    <p>Mise en scène élégante pour vos moments importants</p>
+                    <span class="category-tag">Décoration</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <span class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">&#10094;</span>
+            <img src="" alt="" id="lightboxImage">
+            <span class="lightbox-nav lightbox-next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Laure Compagnie Sarl. Tous droits réservés.</p>
+        <p><i class="fas fa-phone"></i> +237 713 362 75 | <i class="fas fa-envelope"></i> carinenya75@gmail.com</p>
+    </footer>
+
+    <script>
+
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // enlever les classes actives de tous les boutons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Ajouter la classe active au bouton cliqué
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Lightbox fonctionnalité
+        let currentImageIndex = 0;
+        const images = Array.from(document.querySelectorAll('.gallery-item img'));
+
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                currentImageIndex = index;
+                openLightbox(item.querySelector('img').src);
+            });
+        });
+
+        function openLightbox(src) {
+            document.getElementById('lightbox').classList.add('active');
+            document.getElementById('lightboxImage').src = src;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeImage(direction) {
+            const visibleImages = images.filter(img =>
+                img.closest('.gallery-item').style.display !== 'none'
+            );
+
+            currentImageIndex += direction;
+
+            if (currentImageIndex >= visibleImages.length) {
+                currentImageIndex = 0;
+            } else if (currentImageIndex < 0) {
+                currentImageIndex = visibleImages.length - 1;
+            }
+
+            document.getElementById('lightboxImage').src = visibleImages[currentImageIndex].src;
+        }
+
+        // Fermer la lightbox avec la touche Échap
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') changeImage(-1);
+            if (e.key === 'ArrowRight') changeImage(1);
+        });
+
+        // Fermer la lightbox en cliquant en dehors de l'image
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('lightbox')) {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+
+</html>
